@@ -11,7 +11,7 @@ public class ForgetPasswordService {
 	
 	ForgetPasswordDAO forget=new ForgetPasswordDAO();
 	App app=new App();
-	public void forgetPassword() throws ParseException{
+	public void forgetPassword() {
 		String username;
 		String newPassword;
 		Scanner scanner=new Scanner(System.in);

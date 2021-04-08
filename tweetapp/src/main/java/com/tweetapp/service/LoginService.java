@@ -13,7 +13,7 @@ public class LoginService {
 	String password;
 	LoginDAO loginDAO=new LoginDAO();
 	App app=new App();
-	public void getUser() throws ParseException{
+	public void getUser() {
 		Scanner scanner =new Scanner(System.in);
 		System.out.println("Enter username:");
 		username=scanner.next();
@@ -78,12 +78,7 @@ public void resetPassword(String username){
 public void logout(String username){
 	loginDAO.updateLogoutStatus(username);
 	System.out.println("Logout successfully");
-	try {
-		app.tweet();
-	} catch (ParseException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	app.tweet();
 	
 }
 	public void loginChoice(String username) {

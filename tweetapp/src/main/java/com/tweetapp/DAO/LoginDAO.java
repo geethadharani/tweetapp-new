@@ -35,8 +35,7 @@ public class LoginDAO {
 			
 				con.close(); 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Exception occurred due to"+e);
 		} 
 		
 	}
@@ -60,8 +59,7 @@ public void getMyTweet(String username){
 			 }
 			con.close(); 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Exception occurred due to"+e);
 		} 
 		
 	}
@@ -88,8 +86,7 @@ public boolean resetPassword(String username,String oldPassword,String newPasswo
 		
 		con.close(); 
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println("Exception occurred due to"+e);
 	} 
 	return result;
 	
@@ -109,8 +106,7 @@ public void updateLogoutStatus(String username){
 		
 		con.close(); 
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println("Exception occurred due to"+e);
 	} 
 }
 public void getAllTweet(){
@@ -127,8 +123,7 @@ public void getAllTweet(){
 		}
 		con.close(); 
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println("Exception occurred due to"+e);
 	} 
 	
 }
@@ -146,8 +141,7 @@ public void getAllUser(){
 		}
 		con.close(); 
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println("Exception occurred due to"+e);
 	} 
 	
 }
@@ -173,8 +167,7 @@ public void getAllUser(){
 		
 			con.close(); 
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		System.out.println("Exception occurred due to"+e);
 	} 
 	return result;
 	}

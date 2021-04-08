@@ -15,7 +15,7 @@ import com.tweetapp.service.RegistrationService;
  */
 public class App 
 {
-	public static void tweet() throws ParseException{
+	public static void tweet() {
 		int choice;
     	Scanner scanner=new Scanner(System.in);
     	System.out.println("TweetApp");

@@ -32,8 +32,7 @@ public class ForgetPasswordDAO {
 			
 			con.close(); 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Exception occurred due to"+e);
 		} 
 		return result;
 		
