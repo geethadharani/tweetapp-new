@@ -18,7 +18,7 @@ public class App
 	public static void tweet() {
 		int choice;
     	Scanner scanner=new Scanner(System.in);
-    	System.out.println("TweetApp");
+    	System.out.println("TweetApp--");
     	System.out.println("1.Registration");
     	System.out.println("2.Login");
     	System.out.println("3.Forget Password");
